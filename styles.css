@@ -1,0 +1,25 @@
+.image-frame {
+  width: 400px;  
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+.image-frame::before {
+  content: "";
+  position: absolute;
+  top: -6px;  
+  left: -6px;  
+  width: calc(100% + 12px);  
+  height: calc(100% + 12px); 
+  border: 6px solid pink; 
+  box-sizing: border-box;
+  transform: rotate(125deg);  
+  z-index: 1;  
+}
