@@ -1,0 +1,50 @@
+.project {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 300px;
+    height: auto;
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    visibility: hidden;  
+    transition: visibility 0.5s;
+}
+
+.project:hover .project-info {
+    visibility: visible;  
+}
+
+.project-title {
+    color: white;
+    background-color: orange;
+    padding: 5px 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    color: white;
+    margin-bottom: 10px;
+    visibility: visible;  
+}
+
+.project-description-hidden {
+    display: none;
+}
+
+.project:hover .project-description-hidden {
+    display: block;  
+    color: white;  
+}
